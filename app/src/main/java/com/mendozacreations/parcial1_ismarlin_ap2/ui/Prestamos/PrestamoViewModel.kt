@@ -26,9 +26,7 @@ class PrestamoViewModel @Inject constructor(
         viewModelScope.launch {
             prestamoRepository.insertar(
                 Prestamo(
-                    deudor = deudor,
-                    concepto = concepto,
-                    monto = monto.toFloat()
+                    deudor = deudor, concepto = concepto, monto = monto.toFloat()
                 )
             )
         }

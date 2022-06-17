@@ -139,3 +139,13 @@ fun RegistroPrestamoScreen(
         }
     }
 }
+
+fun validate(number:String): Boolean {
+    val validation = number.toDouble()
+
+    if (validation >= 1){
+        return true
+    }else{
+        return false
+    }
+}
